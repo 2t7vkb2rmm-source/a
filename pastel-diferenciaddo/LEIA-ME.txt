@@ -1,0 +1,30 @@
+PASTEL DIFERENCIADDO · SITE (PRÉVIA)
+Nexora Web Solutions
+=====================================
+
+COMO VER
+Abra o arquivo index.html no Chrome ou Safari, com internet ligada
+(as fotos ilustrativas carregam do Pexels, banco de fotos gratuito).
+O index.html é a porta de entrada do site: toda hospedagem
+(Vercel, Netlify etc.) procura esse arquivo. Mantenha a estrutura
+de pastas como está.
+
+ESTRUTURA
+index.html            página principal
+assets/css/           visual do site
+assets/js/main.js     interações e TODOS os dados do negócio (CONFIG)
+assets/fonts/         fontes (já embutidas, não dependem da internet)
+assets/img/           logo
+
+PARA A VERSÃO FINAL (depois de fechar)
+1. Cardápio real: editar a lista "itens" no começo de assets/js/main.js
+   (nome, descrição e foto de cada sabor). Os sabores Queijo, Carne,
+   Frango e Pizza são só exemplos da prévia.
+2. Fotos reais: salvar na pasta assets/img e trocar os links das fotos
+   do Pexels no index.html e no main.js pelos arquivos novos.
+3. Confirmar o horário com o dono (o WhatsApp dele mostra 18h45 na quinta,
+   o Google mostra 19h). Ajustar em "horarios" no main.js.
+4. Remover a faixa "Prévia" (div class="preview-strip") e a linha
+   "Prévia desenvolvida por..." do rodapé no index.html.
+5. Remover a linha <meta name="robots" content="noindex, nofollow">
+   do index.html, senão o Google não mostra o site.
