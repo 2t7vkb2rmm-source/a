@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#D9A05B">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Conheça a Déia Lanches, em Jardinópolis. Desde 2018, com lanches, hambúrgueres, hot dog e porções. Acesse o cardápio oficial.">
+  <title>Déia Lanches | Prévia do site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:12px}body{margin:0}a{text-decoration:none;color:inherit}button,input,select{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}img{max-width:100%;height:auto}.skip-link{position:fixed;top:-100px;left:16px;z-index:100;background:#061e0b;padding:12px 20px;color:#f8e8c8}.skip-link:focus{top:12px}</style>
+  <style>
+/* Déia Lanches preview. Everything is scoped under .dl-page so the Nexora styles stay untouched. */
+.dl-page {
+  --dl-green: #061e0b;
+  --dl-orange: #cf4c0f;
+  --dl-caramel: #d9a05b;
+  --dl-cream: #f8e8c8;
+  --dl-brown: #311105;
+  --dl-tint: #f2dab2; /* 20% caramel over cream, for secondary surfaces */
+  --dl-green-hover: #12391c;
+  --dl-caramel-hover: #e5b67c;
+  --dl-gutter: 16px;
+  --dl-section: 3.75rem;
+  --dl-focus: var(--dl-green);
+  --dl-display: 'Barlow Condensed', 'Arial Narrow', 'Roboto Condensed', 'Helvetica Neue', Arial, sans-serif;
+  --dl-body: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --dl-paper: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .19 0 0 0 0 .07 0 0 0 0 .02 0 0 0 .5 -.2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E");
+  color-scheme: light;
+  background: var(--dl-cream);
+  color: var(--dl-brown);
+  font-family: var(--dl-body);
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+@media (min-width: 360px) { .dl-page { --dl-gutter: 20px; } }
+@media (min-width: 768px) { .dl-page { --dl-gutter: 32px; --dl-section: 5rem; } }
+@media (min-width: 1024px) { .dl-page { --dl-gutter: 40px; --dl-section: 6.5rem; font-size: 1.125rem; } }
+
+body:has(.dl-page) { background: var(--dl-cream, #f8e8c8); }
+body:has(.dl-page) .skip-link { background: #061e0b; color: #f8e8c8; }
+/* Fully above the screen whatever its height with enlarged text. */
+body:has(.dl-page) .skip-link:not(:focus) { top: auto; bottom: 100%; }
+html:has(.dl-page) { scroll-padding-top: 12px; scroll-padding-bottom: calc(var(--dl-bar-h, 9.5rem) + 16px); }
+@media (min-width: 1024px) { html:has(.dl-page) { scroll-padding-bottom: 0; } }
+
+.dl-page main:focus { outline: none; }
+.dl-page a:focus-visible,
+.dl-page button:focus-visible { outline: 3px solid var(--dl-focus); outline-offset: 3px; }
+:where(.dl-page) :where(p, figure, blockquote) { margin: 0; }
+.dl-page h1, .dl-page h2, .dl-page h3 {
+  margin: 0;
+  font-family: var(--dl-display);
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+.dl-page h1 { font-size: clamp(2.375rem, 1.5rem + 4.5vw, 3rem); }
+.dl-page h2 { font-size: clamp(1.875rem, 1.4rem + 2.2vw, 2.25rem); }
+.dl-page h3 { font-size: 1.75rem; }
+@media (min-width: 768px) {
+  .dl-page h1 { font-size: 3.5rem; }
+  .dl-page h2 { font-size: 2.5rem; }
+}
+@media (min-width: 1024px) {
+  .dl-page h1 { font-size: clamp(4rem, 1rem + 4.7vw, 5rem); }
+  .dl-page h2 { font-size: clamp(2.625rem, 1rem + 2.6vw, 3.25rem); }
+}
+
+.dl-wrap {
+  width: 100%;
+  max-width: calc(1200px + 2 * var(--dl-gutter));
+  margin-inline: auto;
+  padding-left: calc(var(--dl-gutter) + env(safe-area-inset-left, 0px));
+  padding-right: calc(var(--dl-gutter) + env(safe-area-inset-right, 0px));
+}
+.dl-wrap > *, .dl-wrap [class*='-grid'] > * { min-width: 0; }
+
+/* Surfaces */
+.dl-surface-light { background-color: var(--dl-cream); background-image: var(--dl-paper); color: var(--dl-brown); }
+.dl-surface-dark { background: var(--dl-brown); color: var(--dl-cream); --dl-focus: var(--dl-caramel); }
+.dl-surface-green { background: var(--dl-green); color: var(--dl-cream); --dl-focus: var(--dl-caramel); }
+
+/* Shared pieces */
+.dl-nowrap { white-space: nowrap; }
+.dl-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.dl-preview-strip { background: var(--dl-caramel); color: var(--dl-brown); text-align: center; font-size: .875rem; font-weight: 700; line-height: 1.5; padding: 5px 16px; }
+.dl-eyebrow { display: flex; align-items: center; gap: 10px; font-size: .875rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--dl-green); }
+.dl-eyebrow::before { content: ''; flex: 0 0 28px; height: 3px; border-radius: 2px; background: var(--dl-orange); }
+.dl-surface-dark .dl-eyebrow, .dl-surface-green .dl-eyebrow { color: var(--dl-caramel); }
+.dl-seal { display: inline-flex; align-items: center; gap: 6px; padding: 2px 8px; border: 2px solid var(--dl-green); border-radius: 6px; color: var(--dl-green); font-family: var(--dl-display); font-weight: 800; font-size: .9375rem; letter-spacing: .08em; line-height: 1.25; text-transform: uppercase; }
+.dl-seal-large { padding: 4px 12px; font-size: 1.125rem; background: var(--dl-caramel); border-color: var(--dl-caramel); }
+.dl-crown { width: 20px; height: 20px; object-fit: contain; flex-shrink: 0; }
+.dl-lead { font-size: 1.0625rem; }
+@media (min-width: 1024px) { .dl-lead { font-size: 1.1875rem; } }
+.dl-support, .dl-note, .dl-small { font-size: .875rem; }
+.dl-star { color: var(--dl-caramel); fill: var(--dl-caramel); flex-shrink: 0; }
+
+/* Buttons */
+.dl-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 3.25rem; padding: .75rem 1.25rem;
+  border: 2px solid transparent; border-radius: 12px;
+  font-family: var(--dl-body); font-size: 1rem; font-weight: 700; line-height: 1.25; text-align: center;
+  transition: background-color .15s ease, border-color .15s ease;
+}
+.dl-btn svg { flex-shrink: 0; }
+.dl-btn-primary { background: var(--dl-green); color: var(--dl-cream); }
+.dl-btn-primary:hover { background: var(--dl-green-hover); }
+.dl-btn-secondary { border-color: var(--dl-green); color: var(--dl-green); background: transparent; }
+.dl-btn-secondary:hover { background: var(--dl-tint); }
+.dl-surface-dark .dl-btn-primary, .dl-surface-green .dl-btn-primary { background: var(--dl-caramel); color: var(--dl-brown); }
+.dl-surface-dark .dl-btn-primary:hover, .dl-surface-green .dl-btn-primary:hover { background: var(--dl-caramel-hover); }
+.dl-surface-dark .dl-btn-secondary, .dl-surface-green .dl-btn-secondary { border-color: var(--dl-caramel); color: var(--dl-cream); }
+.dl-surface-dark .dl-btn-secondary:hover, .dl-surface-green .dl-btn-secondary:hover { background: rgb(217 160 91 / .16); }
+.dl-actions { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+@media (min-width: 768px) {
+  .dl-actions { flex-direction: row; flex-wrap: wrap; align-items: center; }
+  .dl-actions-center { justify-content: center; }
+}
+.dl-text-link { display: inline-flex; align-items: center; min-height: 48px; font-weight: 700; color: var(--dl-green); text-decoration: underline; text-decoration-color: var(--dl-orange); text-decoration-thickness: 2px; text-underline-offset: 5px; }
+.dl-text-link:hover { text-decoration-color: currentColor; }
+
+/* Opening status */
+.dl-status { display: inline-flex; align-items: baseline; gap: 8px; font-size: .9375rem; line-height: 1.4; }
+.dl-status strong { color: var(--dl-green); }
+.dl-status-mark { width: 10px; height: 10px; flex-shrink: 0; border-radius: 50%; border: 2px solid var(--dl-green); }
+.dl-status[data-state='open'] .dl-status-mark { background: var(--dl-green); }
+.dl-status-neutral a { color: var(--dl-green); font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+
+/* Photos */
+.dl-photo-frame { position: relative; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 18px; background: var(--dl-caramel); }
+.dl-photo-frame img { object-fit: cover; }
+.dl-photo-fallback { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 16px; text-align: center; color: var(--dl-brown); font-weight: 700; font-size: .9375rem; background-image: repeating-linear-gradient(135deg, transparent 0 18px, rgb(49 17 5 / .05) 18px 36px); }
+.dl-photo figcaption { display: flex; flex-direction: column; gap: 2px; margin-top: 8px; font-size: .8125rem; line-height: 1.45; }
+.dl-photo-note { font-weight: 500; }
+
+/* Header */
+.dl-header { background: var(--dl-cream); border-bottom: 1px solid rgb(217 160 91 / .7); }
+.dl-header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; padding-block: 10px; }
+.dl-identity { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
+.dl-brand { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; color: var(--dl-green); }
+.dl-brand-name { font-family: var(--dl-display); font-weight: 800; font-size: 1.5rem; line-height: 1; letter-spacing: .01em; text-transform: uppercase; }
+.dl-logo { position: relative; width: 46px; height: 46px; flex-shrink: 0; }
+.dl-logo img { object-fit: contain; }
+.dl-header .dl-seal { font-size: .8125rem; padding: 1px 6px; }
+.dl-nav { display: none; }
+.dl-header-order { min-height: 48px; padding-inline: 1rem; }
+@media (min-width: 360px) { .dl-brand-name { font-size: 1.75rem; } }
+@media (max-width: 1023px) { .dl-header-order svg { display: none; } }
+@media (min-width: 1024px) {
+  .dl-header-inner { flex-wrap: nowrap; padding-block: 14px; gap: 24px; }
+  .dl-identity { flex-direction: row; align-items: center; gap: 14px; }
+  .dl-brand-name { font-size: 2rem; }
+  .dl-logo { width: 64px; height: 64px; }
+  .dl-nav { display: flex; gap: 4px; margin-inline: auto; }
+  .dl-nav a { display: inline-flex; align-items: center; min-height: 48px; padding: 0 14px; border-radius: 8px; color: var(--dl-green); font-weight: 500; font-size: 1rem; }
+  .dl-nav a:hover { text-decoration: underline; text-decoration-color: var(--dl-orange); text-decoration-thickness: 2px; text-underline-offset: 6px; }
+}
+
+/* 5.3 Hero */
+.dl-hero { padding-block: 1.75rem var(--dl-section); }
+.dl-hero-grid { display: grid; gap: 28px; }
+.dl-hero h1 { margin-top: 14px; color: var(--dl-green); }
+.dl-hero .dl-lead { margin-top: 14px; }
+.dl-service-line { margin-top: 14px; font-weight: 700; color: var(--dl-green); }
+.dl-hero-status { margin-top: 10px; }
+.dl-hero .dl-support { margin-top: 12px; }
+.dl-proof { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 16px; }
+.dl-proof strong { color: var(--dl-green); }
+.dl-hero-photo .dl-photo-frame { border: 8px solid var(--dl-caramel); border-radius: 20px; }
+@media (prefers-reduced-motion: no-preference) { .dl-hero-photo { animation: dl-rise 220ms ease-out; } }
+@keyframes dl-rise { from { transform: translateY(8px); } }
+@media (min-width: 1024px) {
+  .dl-hero { padding-top: 3.5rem; }
+  .dl-hero-grid { grid-template-columns: minmax(0, 48fr) minmax(0, 52fr); align-items: center; gap: 56px; }
+  .dl-hero-photo .dl-photo-frame { aspect-ratio: 5 / 4; }
+}
+
+/* 5.4 Highlight */
+.dl-highlight { padding-block: var(--dl-section); }
+.dl-highlight-grid { display: grid; gap: 28px; grid-template-areas: 'head' 'media' 'body'; }
+.dl-highlight-head { grid-area: head; }
+.dl-highlight-media { grid-area: media; }
+.dl-highlight-body { grid-area: body; }
+.dl-highlight h2 { margin-top: 12px; font-size: clamp(2.25rem, 1.5rem + 3vw, 2.75rem); }
+.dl-highlight .dl-lead { margin-top: 14px; }
+.dl-pullquote { border-left: 4px solid var(--dl-caramel); padding-left: 18px; }
+.dl-pullquote blockquote p { font-size: 1.25rem; font-weight: 500; line-height: 1.45; }
+.dl-pullquote figcaption { margin-top: 10px; color: var(--dl-caramel); font-size: .875rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.dl-highlight .dl-support { margin-top: 12px; }
+@media (min-width: 1024px) {
+  .dl-highlight-grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); grid-template-rows: 1fr 1fr; grid-template-areas: 'media head' 'media body'; column-gap: 64px; row-gap: 32px; }
+  .dl-highlight-head { align-self: end; }
+  .dl-highlight-body { align-self: start; }
+  .dl-highlight-media { align-self: center; }
+  .dl-highlight h2 { font-size: clamp(3.25rem, 1rem + 3.4vw, 4rem); }
+  .dl-pullquote blockquote p { font-size: 1.5rem; }
+}
+
+/* Section heads */
+.dl-section-head { max-width: 46rem; }
+.dl-section-head h2 { margin-top: 12px; color: var(--dl-green); }
+.dl-section-head > p:last-child { margin-top: 14px; }
+
+/* 5.5 Categories */
+.dl-categories { padding-block: var(--dl-section); }
+.dl-category-grid { list-style: none; margin: 32px 0 0; padding: 0; display: grid; gap: 20px; }
+.dl-category { display: flex; flex-direction: column; padding: 12px; border-radius: 22px; background: var(--dl-tint); }
+.dl-category .dl-photo-frame { border-radius: 14px; }
+.dl-category .dl-photo figcaption { padding-inline: 4px; }
+.dl-category-body { padding: 14px 6px 2px; }
+.dl-category h3 { color: var(--dl-green); font-size: 2rem; }
+.dl-category-body p { margin-top: 6px; }
+.dl-categories .dl-note { margin-top: 28px; }
+.dl-categories .dl-actions { margin-top: 20px; }
+@media (min-width: 768px) { .dl-category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; } }
+@media (min-width: 1024px) {
+  .dl-category-grid { gap: 40px; margin-top: 48px; }
+  .dl-category { padding: 16px; }
+  .dl-category-body { padding: 18px 8px 4px; }
+  .dl-categories .dl-note { text-align: center; margin-top: 40px; }
+}
+
+/* 5.6 Reviews */
+.dl-reviews { padding-block: var(--dl-section); }
+.dl-reviews-grid { display: grid; gap: 32px; }
+.dl-reviews h2 { margin-top: 12px; }
+.dl-score { display: flex; align-items: center; gap: 10px; margin-top: 28px; }
+.dl-score-value { font-family: var(--dl-display); font-weight: 800; font-size: 2.75rem; line-height: 1; }
+.dl-score-count { margin-top: 4px; font-weight: 700; color: var(--dl-caramel); }
+.dl-reviews-intro > p:last-child { margin-top: 16px; }
+.dl-review-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.dl-review { height: 100%; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; padding: 22px; border-radius: 18px; background: var(--dl-cream); color: var(--dl-brown); }
+.dl-review blockquote p { font-size: 1.0625rem; line-height: 1.5; }
+.dl-review figcaption { color: var(--dl-green); font-size: .8125rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+@media (min-width: 768px) { .dl-review-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) {
+  .dl-reviews-grid { grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 56px; align-items: start; }
+  .dl-review-list { gap: 20px; }
+  .dl-review { padding: 28px; }
+  .dl-score-value { font-size: 3.5rem; }
+}
+
+/* 5.7 Story */
+.dl-story { padding-block: var(--dl-section); }
+.dl-story-grid { display: grid; gap: 32px; }
+.dl-story h2 { margin-top: 14px; color: var(--dl-green); }
+.dl-story-copy > p:not(.dl-seal) { margin-top: 14px; max-width: 38rem; }
+.dl-signature { font-family: var(--dl-display); font-weight: 800; font-size: 1.5rem; line-height: 1.2; color: var(--dl-green); display: flex; align-items: center; gap: 10px; }
+.dl-signature::before { content: ''; flex: 0 0 28px; height: 3px; border-radius: 2px; background: var(--dl-orange); }
+.dl-emblem { display: none; }
+.dl-modes { list-style: none; margin: 40px 0 0; padding: 0; display: grid; gap: 16px; }
+.dl-modes li { display: flex; flex-direction: column; align-items: stretch; gap: 10px; padding: 24px; border: 1px solid rgb(217 160 91 / .8); border-radius: 18px; background: var(--dl-tint); }
+.dl-modes h3 { color: var(--dl-green); }
+.dl-modes p { margin-bottom: 8px; }
+.dl-modes .dl-btn { margin-top: auto; }
+.dl-moto { width: 56px; height: 40px; object-fit: contain; }
+@media (min-width: 768px) {
+  .dl-story-grid { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); align-items: center; gap: 48px; }
+  .dl-emblem { display: flex; flex-direction: column; align-items: center; justify-self: center; width: 100%; max-width: 340px; padding: 20px 8px 14px; border-block: 4px solid var(--dl-green); color: var(--dl-green); font-family: var(--dl-display); font-weight: 800; text-transform: uppercase; }
+  .dl-emblem-top { display: flex; align-items: center; gap: 14px; font-size: 1.5rem; letter-spacing: .3em; line-height: 1; }
+  .dl-emblem-top::before, .dl-emblem-top::after { content: ''; width: 40px; height: 3px; background: var(--dl-caramel); }
+  .dl-emblem-year { font-size: clamp(6rem, 11vw, 9.5rem); line-height: .95; }
+  .dl-modes { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 1024px) { .dl-modes { gap: 24px; margin-top: 56px; } .dl-modes li { padding: 28px; } }
+
+/* 5.8 Hours and location */
+.dl-visit { padding-block: var(--dl-section); border-top: 2px solid var(--dl-caramel); }
+.dl-visit-grid { display: grid; gap: 44px; margin-top: 32px; }
+.dl-hours h3, .dl-where h3 { color: var(--dl-green); }
+.dl-hours-status { margin-top: 14px; padding: 12px 14px; border-radius: 12px; background: var(--dl-tint); }
+.dl-hours .dl-small { margin-top: 8px; }
+.dl-hours table { width: 100%; margin-top: 18px; border-collapse: collapse; }
+.dl-hours th, .dl-hours td { padding: 12px 0; border-bottom: 1px solid var(--dl-caramel); text-align: left; vertical-align: top; }
+.dl-hours td { padding-left: 12px; text-align: right; }
+.dl-hours thead th { padding-top: 0; font-size: .8125rem; letter-spacing: .08em; text-transform: uppercase; }
+.dl-hours thead th:last-child { text-align: right; }
+.dl-hours tbody th { font-weight: 700; color: var(--dl-green); }
+.dl-where address { margin-top: 12px; font-style: normal; font-size: 1.0625rem; }
+.dl-where .dl-actions { margin-top: 16px; }
+.dl-map { position: relative; height: 280px; margin-top: 20px; overflow: hidden; border: 2px solid var(--dl-caramel); border-radius: 18px; background: var(--dl-tint); }
+.dl-map iframe { display: block; width: 100%; height: 100%; border: 0; }
+.dl-map-shield { position: absolute; inset: 0; display: flex; align-items: flex-end; justify-content: center; padding: 12px; border: 0; background: transparent; }
+.dl-map-shield span { padding: 8px 14px; border-radius: 10px; background: var(--dl-green); color: var(--dl-cream); font-size: .875rem; font-weight: 700; line-height: 1.4; }
+.dl-map-failed { height: auto; min-height: 280px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 24px; text-align: center; }
+.dl-contact { display: flex; flex-direction: column; gap: 8px; margin-top: 24px; }
+.dl-contact p { font-weight: 700; }
+@media (min-width: 768px) { .dl-contact { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 16px; } }
+@media (min-width: 1024px) {
+  .dl-visit-grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 64px; margin-top: 48px; }
+  .dl-map { height: 340px; }
+  .dl-map-failed { min-height: 340px; }
+}
+
+/* 5.9 Final call */
+.dl-final { padding-block: var(--dl-section); }
+.dl-final-grid { display: grid; gap: 8px; }
+.dl-final h2 { margin-top: 12px; font-size: clamp(2.25rem, 1.5rem + 3vw, 2.75rem); }
+.dl-final-grid > div:first-child > p:last-child { margin-top: 14px; }
+.dl-final-sign { margin-top: 20px; color: var(--dl-caramel); font-family: var(--dl-display); font-weight: 800; font-size: 1.25rem; letter-spacing: .06em; text-transform: uppercase; }
+@media (min-width: 1024px) {
+  .dl-final-grid { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: center; gap: 64px; }
+  .dl-final h2 { font-size: clamp(3rem, 1rem + 3vw, 3.75rem); }
+  .dl-final .dl-actions { margin-top: 0; }
+}
+
+/* 5.10 Footer */
+.dl-footer { padding-block: 48px 16px; border-top: 2px solid var(--dl-caramel); }
+.dl-footer-grid { display: grid; gap: 28px; }
+.dl-footer-name { display: flex; align-items: center; gap: 8px; color: var(--dl-caramel); font-family: var(--dl-display); font-weight: 800; font-size: 2rem; line-height: 1.1; text-transform: uppercase; }
+.dl-footer-grid p + p { margin-top: 4px; }
+.dl-footer address { font-style: normal; }
+.dl-footer nav { display: flex; flex-direction: column; }
+.dl-footer-link { display: flex; align-items: center; width: fit-content; max-width: 100%; min-height: 48px; text-decoration: underline; text-decoration-color: var(--dl-caramel); text-decoration-thickness: 2px; text-underline-offset: 5px; }
+.dl-footer-link:hover { text-decoration-color: currentColor; }
+.dl-footer-notice { margin-top: 28px; padding-top: 16px; border-top: 1px solid rgb(217 160 91 / .5); font-size: .875rem; }
+@media (min-width: 1024px) {
+  .dl-footer { padding-block: 64px 32px; }
+  .dl-footer-grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr) minmax(0, 1fr); gap: 48px; }
+}
+
+/* 8. Order bar: sticky at the end of the page, so it rests below the footer instead of covering it. */
+.dl-order-bar {
+  position: sticky; bottom: 0; z-index: 40;
+  padding: 10px calc(16px + env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) calc(16px + env(safe-area-inset-left, 0px));
+  border-top: 2px solid var(--dl-caramel);
+  background: var(--dl-cream);
+  box-shadow: 0 -4px 16px rgb(49 17 5 / .08);
+  --dl-focus: var(--dl-green);
+}
+.dl-bar-status, .dl-bar-status .dl-status { font-size: .875rem; }
+/* Order takes about two thirds; with large text the buttons stack instead of squeezing. */
+.dl-bar-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.dl-bar-actions .dl-btn { min-height: 48px; padding-inline: 10px; }
+.dl-bar-actions .dl-btn-primary { flex: 2 1 0; min-width: 9rem; }
+.dl-bar-actions .dl-btn-secondary { flex: 1 1 0; min-width: max-content; }
+@media (max-width: 359px) { .dl-bar-actions svg { display: none; } }
+/* Wider screens and phones in landscape: status and buttons share one row to save height. */
+@media (min-width: 640px) {
+  .dl-bar-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; max-width: 960px; margin-inline: auto; }
+  .dl-bar-status { flex: 1 1 12rem; }
+  .dl-bar-actions { flex: 2 1 22rem; margin-top: 0; }
+}
+@media (min-width: 1024px) { .dl-order-bar { display: none; } }
+
+/* Entrance: content is always visible; blocks below the fold start a few pixels lower once. */
+[data-dl-reveal] { --dl-shift: 8px; --dl-dur: 200ms; transition: transform var(--dl-dur) ease-out; }
+[data-dl-reveal='8-220'] { --dl-dur: 220ms; }
+[data-dl-reveal='10-240'] { --dl-shift: 10px; --dl-dur: 240ms; }
+.dl-pending { transform: translateY(var(--dl-shift)); transition: none; }
+
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<div class="dl-page" id="topo">
+  <p class="dl-preview-strip">Prévia · imagens ilustrativas</p>
+  <header class="dl-header">
+    <div class="dl-wrap dl-header-inner">
+      <div class="dl-identity">
+        <a class="dl-brand" href="#topo" aria-label="Déia Lanches — início"><span class="dl-brand-name">Déia Lanches</span></a>
+        <span class="dl-seal">Desde 2018</span>
+      </div>
+      <nav class="dl-nav" aria-label="Seções da página"><a href="#destaque">Destaque</a><a href="#cardapio">Cardápio</a><a href="#avaliacoes">Avaliações</a><a href="#localizacao">Como chegar</a></nav>
+      <a class="dl-btn dl-btn-primary dl-header-order" href="https://pedido.anota.ai/loja/deia-lanches-2"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Fazer pedido</a>
+    </div>
+  </header>
+  <main id="conteudo" tabindex="-1">
+    <section class="dl-hero dl-surface-light" aria-labelledby="dl-hero-title">
+      <div class="dl-wrap dl-hero-grid">
+        <div class="dl-hero-copy">
+          <p class="dl-seal dl-seal-large">Desde 2018</p>
+          <h1 id="dl-hero-title">A degustação que te faz voltar</h1>
+          <p class="dl-lead">Lanches, hambúrgueres, hot dog e porções em Jardinópolis. E um destaque para conhecer: o hot dog com purê de batata.</p>
+          <p class="dl-service-line">Delivery · Retirada · Consumo no local</p>
+          <p class="dl-hero-status"><span class="dl-status dl-status-neutral" data-opening-status><a href="#localizacao">Confira os horários de atendimento</a></span></p>
+          <div class="dl-actions"><a class="dl-btn dl-btn-primary " href="https://pedido.anota.ai/loja/deia-lanches-2"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Fazer pedido</a><a class="dl-btn dl-btn-secondary" href="https://wa.me/5516993185899?text=Ol%C3%A1%2C%20D%C3%A9ia%20Lanches%21%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20antes%20de%20fazer%20meu%20pedido."><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>Conversar no WhatsApp</a></div>
+          <p class="dl-support">Faça seu pedido pelo cardápio digital oficial.</p>
+          <p class="dl-proof"><svg class="dl-star" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><strong>4,7 no Google</strong> · 80 avaliações</p>
+        </div>
+        <figure class="dl-photo dl-hero-photo"><div class="dl-photo-frame"><span class="dl-photo-fallback">Imagem ilustrativa indisponível</span></div><figcaption><span>Imagem ilustrativa</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section id="destaque" class="dl-highlight dl-surface-dark" aria-labelledby="dl-highlight-title">
+      <div class="dl-wrap dl-highlight-grid">
+        <div class="dl-highlight-head"><p class="dl-eyebrow">O destaque da Déia</p><h2 id="dl-highlight-title">Hot dog com purê de batata</h2><p class="dl-lead">Um destaque para dar vontade de voltar. O hot dog com purê de batata aparece nos elogios de quem já provou.</p></div>
+        <div class="dl-highlight-media" data-dl-reveal="10-240"><figure class="dl-photo"><div class="dl-photo-frame"><span class="dl-photo-fallback">Imagem ilustrativa indisponível</span></div><figcaption><span>Imagem ilustrativa</span><span class="dl-photo-note">A foto não representa a apresentação do produto da Déia Lanches.</span></figcaption></figure></div>
+        <div class="dl-highlight-body">
+          <figure class="dl-pullquote" data-dl-reveal="10-240"><blockquote><p>“O hot dog com purê de batata é o melhor, voltarei outras vezes, o preço é justo pela qualidade.”</p></blockquote><figcaption>Avaliação no Google</figcaption></figure>
+          <div class="dl-actions"><a class="dl-btn dl-btn-primary " href="https://pedido.anota.ai/loja/deia-lanches-2"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Fazer pedido</a><a class="dl-btn dl-btn-secondary" href="https://wa.me/5516993185899?text=Ol%C3%A1%2C%20D%C3%A9ia%20Lanches%21%20Vi%20o%20destaque%20do%20hot%20dog%20com%20pur%C3%AA%20de%20batata%20no%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20ele."><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>Perguntar sobre o hot dog</a></div>
+          <p class="dl-support">Confira as opções no cardápio digital oficial.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cardapio" class="dl-categories dl-surface-light" aria-labelledby="dl-categories-title">
+      <div class="dl-wrap">
+        <div class="dl-section-head"><p class="dl-eyebrow">Escolha sua vontade</p><h2 id="dl-categories-title">O que combina com a sua fome hoje?</h2><p>Explore as opções e confira os detalhes no cardápio digital oficial.</p></div>
+        <ul class="dl-category-grid">
+          <li class="dl-category" data-dl-reveal="8-200"><figure class="dl-photo"><div class="dl-photo-frame"><span class="dl-photo-fallback">Imagem ilustrativa indisponível</span></div><figcaption><span>Imagem ilustrativa</span></figcaption></figure><div class="dl-category-body"><h3>Hot dog</h3><p>O hot dog com purê de batata merece sua atenção.</p><a class="dl-text-link" href="https://pedido.anota.ai/loja/deia-lanches-2">Ver cardápio oficial</a></div></li>
+          <li class="dl-category" data-dl-reveal="8-200"><figure class="dl-photo"><div class="dl-photo-frame"><span class="dl-photo-fallback">Imagem ilustrativa indisponível</span></div><figcaption><span>Imagem ilustrativa</span></figcaption></figure><div class="dl-category-body"><h3>Hambúrgueres</h3><p>Quando a vontade pede um hambúrguer, a escolha começa aqui.</p><a class="dl-text-link" href="https://pedido.anota.ai/loja/deia-lanches-2">Ver cardápio oficial</a></div></li>
+          <li class="dl-category" data-dl-reveal="8-200"><figure class="dl-photo"><div class="dl-photo-frame"><span class="dl-photo-fallback">Imagem ilustrativa indisponível</span></div><figcaption><span>Imagem ilustrativa</span></figcaption></figure><div class="dl-category-body"><h3>Lanches</h3><p>Abra o cardápio e encontre o lanche da sua vez.</p><a class="dl-text-link" href="https://pedido.anota.ai/loja/deia-lanches-2">Ver cardápio oficial</a></div></li>
+          <li class="dl-category" data-dl-reveal="8-200"><figure class="dl-photo"><div class="dl-photo-frame"><span class="dl-photo-fallback">Imagem ilustrativa indisponível</span></div><figcaption><span>Imagem ilustrativa</span></figcaption></figure><div class="dl-category-body"><h3>Porções</h3><p>Para completar a mesa e aproveitar o momento.</p><a class="dl-text-link" href="https://pedido.anota.ai/loja/deia-lanches-2">Ver cardápio oficial</a></div></li>
+        </ul>
+        <p class="dl-note">As fotos são ilustrativas. Consulte os produtos disponíveis e os preços no cardápio oficial.</p><div class="dl-actions dl-actions-center"><a class="dl-btn dl-btn-primary " href="https://pedido.anota.ai/loja/deia-lanches-2"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Fazer pedido</a></div>
+      </div>
+    </section>
+
+    <section id="avaliacoes" class="dl-reviews dl-surface-green" aria-labelledby="dl-reviews-title">
+      <div class="dl-wrap dl-reviews-grid">
+        <div class="dl-reviews-intro"><p class="dl-eyebrow">Quem prova conta</p><h2 id="dl-reviews-title">Tem elogio que dá vontade de provar.</h2><p class="dl-score"><svg class="dl-star" aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span class="dl-score-value">4,7 no Google</span></p><p class="dl-score-count">80 avaliações</p><p>Alguns relatos de quem já passou pela Déia Lanches.</p></div>
+        <ul class="dl-review-list">
+          <li data-dl-reveal="8-200"><figure class="dl-review"><blockquote><p>“O hot dog com purê de batata é o melhor, voltarei outras vezes, o preço é justo pela qualidade.”</p></blockquote><figcaption>Avaliação no Google</figcaption></figure></li>
+          <li data-dl-reveal="8-200"><figure class="dl-review"><blockquote><p>“Lugar maravilhoso, lanches com ingredientes de qualidade, o hot dog com rúcula e purê top.”</p></blockquote><figcaption>Avaliação no Google</figcaption></figure></li>
+          <li data-dl-reveal="8-200"><figure class="dl-review"><blockquote><p>“Excelente lanche, atendimento rápido e qualidade ótima.”</p></blockquote><figcaption>Avaliação no Google</figcaption></figure></li>
+          <li data-dl-reveal="8-200"><figure class="dl-review"><blockquote><p>“Lanche realmente perfeito, lanche chegou quentinho e antes da data prevista, estão de parabéns!”</p></blockquote><figcaption>Avaliação no Google</figcaption></figure></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="historia" class="dl-story dl-surface-light" aria-labelledby="dl-story-title">
+      <div class="dl-wrap">
+        <div class="dl-story-grid"><div class="dl-story-copy"><p class="dl-seal">Desde 2018</p><h2 id="dl-story-title">A Déia faz parte da sua próxima vontade.</h2><p>A Déia Lanches começou em novembro de 2018. Em Jardinópolis, reúne lanches, hambúrgueres, hot dog e porções para você pedir em casa, retirar ou aproveitar no local.</p><p class="dl-signature">A degustação que te faz voltar</p></div><div class="dl-emblem" aria-hidden="true" data-dl-reveal="8-220"><span class="dl-emblem-top">Desde</span><span class="dl-emblem-year">2018</span></div></div>
+        <ul class="dl-modes">
+          <li data-dl-reveal="8-220"><h3>Delivery</h3><p>Abra o cardápio oficial para consultar as condições de entrega no seu endereço.</p><a class="dl-btn dl-btn-primary " href="https://pedido.anota.ai/loja/deia-lanches-2"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Fazer pedido</a></li>
+          <li data-dl-reveal="8-220"><h3>Retirada</h3><p>Quer buscar seu pedido? Consulte as orientações de retirada no cardápio oficial.</p><a class="dl-btn dl-btn-primary " href="https://pedido.anota.ai/loja/deia-lanches-2"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Fazer pedido</a></li>
+          <li data-dl-reveal="8-220"><h3>No local</h3><p>Venha até a Déia Lanches e aproveite por aqui.</p><a class="dl-btn dl-btn-secondary" href="#localizacao"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Como chegar</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="localizacao" class="dl-visit dl-surface-light dl-surface-alt" aria-labelledby="dl-visit-title">
+      <div class="dl-wrap">
+        <div class="dl-section-head"><p class="dl-eyebrow">Vem pra Déia</p><h2 id="dl-visit-title">Seu próximo encontro com a Déia.</h2><p>Confira os horários e veja como chegar.</p></div>
+        <div class="dl-visit-grid">
+          <div class="dl-hours" data-dl-reveal="8-200">
+            <h3 id="dl-hours-title">Horários de atendimento</h3><p class="dl-hours-status"><span class="dl-status dl-status-neutral" data-opening-status data-no-link>Confira os horários de atendimento</span></p><p class="dl-small">Status calculado pelos horários de atendimento informados.</p>
+            <table aria-labelledby="dl-hours-title"><thead><tr><th scope="col">Dia</th><th scope="col">Horário</th></tr></thead><tbody>
+              <tr><th scope="row">Segunda-feira</th><td>17h30 às 0h</td></tr><tr><th scope="row">Terça-feira</th><td>Fechado</td></tr><tr><th scope="row">Quarta-feira</th><td>17h30 às 0h</td></tr><tr><th scope="row">Quinta-feira</th><td>17h30 às 0h</td></tr><tr><th scope="row">Sexta-feira</th><td>17h30 à 1h</td></tr><tr><th scope="row">Sábado</th><td>17h30 à 1h</td></tr><tr><th scope="row">Domingo</th><td>17h30 às 0h</td></tr>
+            </tbody></table><p class="dl-small">O fechamento às 0h ou à 1h acontece na madrugada do dia seguinte.</p>
+          </div>
+          <div class="dl-where" data-dl-reveal="8-200">
+            <h3>Onde estamos</h3><address>Estrada Vicinal Aziz Rassi, 343 – Vila Bourbon (Sousas), <span class="dl-nowrap">Jardinópolis – SP,</span> <span class="dl-nowrap">14680-000</span></address>
+            <div class="dl-actions"><a class="dl-btn dl-btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Estrada%20Vicinal%20Aziz%20Rassi%2C%20343%20%E2%80%93%20Vila%20Bourbon%20%28Sousas%29%2C%20Jardin%C3%B3polis%20%E2%80%93%20SP%2C%2014680-000"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>Traçar rota</a></div>
+            <div class="dl-map" id="dl-map"><iframe src="https://www.google.com/maps?q=Estrada%20Vicinal%20Aziz%20Rassi%2C%20343%20%E2%80%93%20Vila%20Bourbon%20%28Sousas%29%2C%20Jardin%C3%B3polis%20%E2%80%93%20SP%2C%2014680-000&hl=pt-BR&z=16&output=embed" title="Mapa da localização da Déia Lanches" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe><button type="button" class="dl-map-shield" id="dl-map-shield"><span>Toque ou clique para usar o mapa</span></button></div>
+            <div class="dl-contact"><a class="dl-btn dl-btn-secondary" href="https://wa.me/5516993185899?text=Ol%C3%A1%2C%20D%C3%A9ia%20Lanches%21%20Vim%20pelo%20site%20e%20gostaria%20de%20confirmar%20uma%20informa%C3%A7%C3%A3o%20sobre%20o%20atendimento."><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>Tirar uma dúvida</a><p>WhatsApp: (16) 99318-5899</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dl-final dl-surface-dark" aria-labelledby="dl-final-title"><div class="dl-wrap dl-final-grid" data-dl-reveal="8-220"><div><p class="dl-eyebrow">Deu vontade?</p><h2 id="dl-final-title">Sua próxima mordida começa aqui.</h2><p>Abra o cardápio oficial, confira as opções e faça seu pedido.</p></div><div><div class="dl-actions"><a class="dl-btn dl-btn-primary " href="https://pedido.anota.ai/loja/deia-lanches-2"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Fazer pedido</a><a class="dl-btn dl-btn-secondary" href="https://wa.me/5516993185899?text=Ol%C3%A1%2C%20D%C3%A9ia%20Lanches%21%20Fiquei%20com%20vontade%20de%20conhecer%20os%20lanches%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida."><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>Conversar no WhatsApp</a></div><p class="dl-final-sign">Déia Lanches · Desde 2018</p></div></div></section>
+  </main>
+
+  <footer class="dl-footer dl-surface-dark"><div class="dl-wrap dl-footer-grid"><div><p class="dl-footer-name">Déia Lanches</p><p>A degustação que te faz voltar</p><p>Desde 2018</p></div><div><address>Estrada Vicinal Aziz Rassi, 343 – Vila Bourbon (Sousas), <span class="dl-nowrap">Jardinópolis – SP,</span> <span class="dl-nowrap">14680-000</span></address><a class="dl-footer-link" href="https://wa.me/5516993185899?text=Ol%C3%A1%2C%20D%C3%A9ia%20Lanches%21%20Encontrei%20o%20contato%20de%20voc%C3%AAs%20pelo%20site%20e%20gostaria%20de%20conversar.">WhatsApp: (16) 99318-5899</a></div><nav aria-label="Links da Déia Lanches"><a class="dl-footer-link" href="https://pedido.anota.ai/loja/deia-lanches-2">Cardápio oficial</a><a class="dl-footer-link" href="https://www.instagram.com/deia.lanches/">Instagram</a><a class="dl-footer-link" href="https://www.facebook.com/Deialanches2018">Facebook</a></nav></div><div class="dl-wrap"><p class="dl-footer-notice">Prévia de apresentação. Imagens ilustrativas.</p></div></footer>
+
+  <div class="dl-order-bar" id="dl-order-bar"><div class="dl-bar-inner"><p class="dl-bar-status"><span class="dl-status dl-status-neutral" data-opening-status><a href="#localizacao">Confira os horários de atendimento</a></span></p><div class="dl-bar-actions"><a class="dl-btn dl-btn-primary " href="https://pedido.anota.ai/loja/deia-lanches-2"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Fazer pedido</a><a class="dl-btn dl-btn-secondary" href="https://wa.me/5516993185899?text=Ol%C3%A1%2C%20D%C3%A9ia%20Lanches%21%20Estou%20no%20site%20e%20preciso%20de%20uma%20ajuda%20antes%20de%20fazer%20meu%20pedido."><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>WhatsApp</a></div></div></div>
+  <p class="dl-sr-only" id="dl-status-announcer" aria-live="polite"></p>
+</div>
+<script>
+(() => {
+  const WEEK = [
+    { opens: 1050, closes: 1440 },
+    { opens: 1050, closes: 1440 },
+    null,
+    { opens: 1050, closes: 1440 },
+    { opens: 1050, closes: 1440 },
+    { opens: 1050, closes: 1500 },
+    { opens: 1050, closes: 1500 },
+  ];
+  const DAY_NAMES = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'];
+  const WEEKDAYS = { Sun:0, Mon:1, Tue:2, Wed:3, Thu:4, Fri:5, Sat:6 };
+  const fmt = new Intl.DateTimeFormat('en-US',{timeZone:'America/Sao_Paulo',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'});
+  const formatClock = minutes => { const m=((minutes%1440)+1440)%1440; const h=Math.floor(m/60), min=m%60; return min ? `${h}h${String(min).padStart(2,'0')}` : `${h}h`; };
+  const localClock = date => { const p=Object.fromEntries(fmt.formatToParts(date).map(x=>[x.type,x.value])); return {weekday:WEEKDAYS[p.weekday],minutes:(Number(p.hour)%24)*60+Number(p.minute)}; };
+  const getStatus = date => {
+    const {weekday,minutes}=localClock(date), today=WEEK[weekday], yesterday=WEEK[(weekday+6)%7];
+    const open = closes => ({state:'open',text:'Aberto agora',detail:`Atendimento até ${formatClock(closes)}`});
+    if (today && minutes>=today.opens && minutes<today.closes) return open(today.closes);
+    if (yesterday && minutes+1440>=yesterday.opens && minutes+1440<yesterday.closes) return open(yesterday.closes);
+    if (today && minutes<today.opens) return {state:'closed',text:`Abre hoje às ${formatClock(today.opens)}`};
+    for (let offset=1;offset<=7;offset++) { const day=(weekday+offset)%7, shift=WEEK[day]; if (!shift) continue; const when=offset===1?'amanhã':DAY_NAMES[day].toLowerCase(); return {state:'closed',text:`Fechado agora · Abre ${when} às ${formatClock(shift.opens)}`}; }
+    return null;
+  };
+  let last='';
+  function updateStatus(){
+    let status=null; try{status=getStatus(new Date())}catch{}
+    if(!status) return;
+    const text=status.detail?`${status.text} · ${status.detail}`:status.text;
+    document.querySelectorAll('[data-opening-status]').forEach(el=>{
+      el.className='dl-status'; el.dataset.state=status.state;
+      el.innerHTML=`<span class="dl-status-mark" aria-hidden="true"></span><span><strong>${status.text}</strong>${status.detail?` · ${status.detail}`:''}</span>`;
+    });
+    if(last && last!==text){ const live=document.getElementById('dl-status-announcer'); if(live) live.textContent=text; }
+    last=text;
+  }
+  updateStatus();
+  setInterval(updateStatus,60000-(Date.now()%60000)+50);
+  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible') updateStatus();});
+
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window){
+    const items=document.querySelectorAll('[data-dl-reveal]');
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.remove('dl-pending');observer.unobserve(entry.target);}}),{threshold:.05});
+    items.forEach(item=>{if(item.getBoundingClientRect().top>innerHeight){item.classList.add('dl-pending');observer.observe(item);}});
+  }
+  const bar=document.getElementById('dl-order-bar');
+  if(bar && 'ResizeObserver' in window){ const update=()=>document.documentElement.style.setProperty('--dl-bar-h',`${bar.offsetHeight}px`); new ResizeObserver(update).observe(bar); update(); }
+  const shield=document.getElementById('dl-map-shield'), iframe=document.querySelector('#dl-map iframe');
+  if(shield && iframe) shield.addEventListener('click',()=>{shield.remove(); iframe.removeAttribute('tabindex');});
+})();
+
+</script>
+</body></html>
